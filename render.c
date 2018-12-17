@@ -8,7 +8,7 @@
 static cairo_format_t get_cairo_format(enum wl_shm_format wl_fmt) {
 	switch (wl_fmt) {
 	case WL_SHM_FORMAT_ARGB8888:
-		return CAIRO_FORMAT_ARGB32;
+		return CAIRO_FORMAT_RGB24;
 	case WL_SHM_FORMAT_XRGB8888:
 		return CAIRO_FORMAT_RGB24;
 	default:
